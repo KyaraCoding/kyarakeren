@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e2d7b1;
+            animation: fadeIn 1.5s ease-in;
+            overflow-x: hidden;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background-color: #d8cfb0;
+            color: rgb(128, 107, 84);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Profile picture kucing */
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #75593f;
+            margin-bottom: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.4s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1) rotate(3deg);
+        }
+
+        header h1 {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Sticker paw */
+        .paw {
+            position: absolute;
+            font-size: 40px;
+            opacity: 0.3;
+        }
+
+        .paw.one { top: 10px; left: 20px; }
+        .paw.two { bottom: 10px; right: 20px; }
+
+        /* ===== NAV ===== */
+        nav {
+            background-color: #75593f;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd9a0;
+            text-shadow: 0 0 10px #ffd9a0;
+        }
+
+        /* ===== CONTENT ===== */
+        .container {
+            padding: 20px;
+        }
+
+        section {
+            background: rgb(185, 152, 113);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Heart sticker */
+        .heart {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 28px;
+            background: #d8cfb0;
+            padding: 8px;
+            border-radius: 50%;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background-color: #141414;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Sticker -->
+    <div class="paw one">🐾</div>
+    <div class="paw two">🐾</div>
+
+    <!-- Foto kucing (profile) -->
+    <img src=https://avatars.fastly.steamstatic.com/4c5aac7f171173990032dba9fc363a5a9a43f61c_full.jpg alt="kucing" class="profile-pic">
+
+    <h1>Kyara Alifia</h1>
+    <p> XIIE</p>
+</header>
+
+<nav>
+    <a href="#about">about</a>
+    <a href="#keahlian">keahlian</a>
+    <a href="#contact">contact</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <div class="heart">🤎</div>
+        <h2>about me</h2>
+        <p>Haii aku Kyara Alifia. Sekarang aku sedang berada di kelas 12E SMA Budi Luhur. Disini aku mendapatkan 4 mapel peminatan, yaitu biologi, sosiologi, ekonomi, dan ict.</p>
+    </section>
+
+    <section id="keahlian">
+        <div class="heart">🐾</div>
+        <h2>keahlian</h2>
+        <p>Lettering, cooking, baking</p>
+    </section>
+
+    <section id="contact">
+        <div class="heart">🤍</div>
+        <h2>contact</h2>
+        <p>Email: kyeeanakbudiluhur@gmail.com</p>
+        <p>WhatsApp: 0812-3456-7890</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 biodataku</p>
+</footer>
+
+</body>
+</html>
